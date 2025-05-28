@@ -1,6 +1,6 @@
 {
   "name": "pincode-address",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fetch Indian location details using a 6-digit PIN code via India Post's public API.",
   "main": "index.js",
   "scripts": {
