@@ -1,10 +1,30 @@
-# 📦 pincode-address
+# 📦 Pincode-address
 
 Fetch Indian location details using a 6-digit PIN code via India Post's public API.
 
 ## 🌐 Description
 
 `pincode-address` is a lightweight Node.js module that uses India Post’s public API to fetch detailed address information such as post office name, district, state, and region, based on the provided PIN code.
+
+---
+## 🔍 Live Demo
+
+You can try the package in action through a live demo:
+
+🌐 https://pincode-address.netlify.app
+
+The demo page allows users to:
+
+- Enter a 6-digit Indian PIN code
+- Instantly fetch and display:
+  - Post Office Names
+  - Branch Types
+  - Delivery Status
+  - District, State, Region, and more
+- Validate PIN code input before fetching
+- View results in a user-friendly format
+
+> Built using React.js, this web interface showcases the functionality of the `pincode-address` Node.js module in real-time.
 
 ---
 
