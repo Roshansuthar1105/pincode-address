@@ -1,0 +1,32 @@
+{
+  "name": "pincode-address",
+  "version": "1.0.0",
+  "description": "Fetch Indian location details using a 6-digit PIN code via India Post's public API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "pincode",
+    "postal",
+    "address",
+    "india",
+    "location",
+    "post-office",
+    "pin-code",
+    "indian-pincode"
+  ],
+  "author": "Roshan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/pincode-address"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/pincode-address/issues"
+  },
+  "homepage": "https://github.com/yourusername/pincode-address#readme",
+  "dependencies": {
+    "axios": "^1.9.0"
+  }
+}
