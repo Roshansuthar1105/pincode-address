@@ -119,7 +119,8 @@ await getPincodeInfo("123"); // ❌ Error: Invalid PIN code. It must be 6 digits
 
 ## 📄 License
 
-MIT
+This project is licensed under the [MIT License](LICENSE).
+
 
 ---
 
