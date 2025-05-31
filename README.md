@@ -1,30 +1,21 @@
-# 📦 Pincode-address
+# 📦 pincode-address
 
-Fetch Indian location details using a 6-digit PIN code via India Post's public API.
+[![npm version](https://img.shields.io/npm/v/pincode-address.svg)](https://www.npmjs.com/package/pincode-address)
+[![npm downloads](https://img.shields.io/npm/dt/pincode-address.svg)](https://www.npmjs.com/package/pincode-address)
+[![MIT License](https://img.shields.io/npm/l/pincode-address.svg)](LICENSE)
 
-## 🌐 Description
-
-`pincode-address` is a lightweight Node.js module that uses India Post’s public API to fetch detailed address information such as post office name, district, state, and region, based on the provided PIN code.
+> A lightweight Node.js module to fetch Indian location details using a 6-digit PIN code via India Post’s public API.
 
 ---
-## 🔍 Live Demo
 
-You can try the package in action through a live demo:
+## 🌐 Overview
 
-🌐 https://pincode-address.netlify.app
+`pincode-address` allows developers to retrieve detailed address data — including post office names, branch types, delivery status, district, state, and more — using a valid Indian PIN code.
 
-The demo page allows users to:
-
-- Enter a 6-digit Indian PIN code
-- Instantly fetch and display:
-  - Post Office Names
-  - Branch Types
-  - Delivery Status
-  - District, State, Region, and more
-- Validate PIN code input before fetching
-- View results in a user-friendly format
-
-> Built using React.js, this web interface showcases the functionality of the `pincode-address` Node.js module in real-time.
+Useful for:
+- Auto-filling forms
+- Validating delivery zones
+- Enriching location-based features
 
 ---
 
@@ -33,6 +24,18 @@ The demo page allows users to:
 ```bash
 npm install pincode-address
 ```
+
+---
+
+## 🔍 Live Demo
+
+Try it live: [pincode-address.netlify.app](https://pincode-address.netlify.app)
+
+🔹 Features:
+- Input validation for 6-digit PIN codes  
+- Real-time fetch of address data  
+- User-friendly output format  
+- Built using React.js
 
 ---
 
@@ -47,52 +50,20 @@ const { getPincodeInfo } = require('pincode-address');
 })();
 ```
 
-### ✅ Output:
+### ✅ Example Output:
 
 ```json
 [
   {
     "Name": "Bilwa",
-    "Description": null,
     "BranchType": "Branch Post Office",
     "DeliveryStatus": "Delivery",
-    "Circle": "Rajasthan",
     "District": "Jaipur",
-    "Division": "Jaipur City",
-    "Region": "Jaipur HQ",
-    "Block": "Sanganer",
     "State": "Rajasthan",
     "Country": "India",
     "Pincode": "302022"
   },
-  {
-    "Name": "Shri Ram Ki Nangal",
-    "Description": null,
-    "BranchType": "Branch Post Office",
-    "DeliveryStatus": "Delivery",
-    "Circle": "Rajasthan",
-    "District": "Jaipur",
-    "Division": "Jaipur City",
-    "Region": "Jaipur HQ",
-    "Block": "Jaipur",
-    "State": "Rajasthan",
-    "Country": "India",
-    "Pincode": "302022"
-  },
-  {
-    "Name": "Sitapura Industrial Area",
-    "Description": null,
-    "BranchType": "Sub Post Office",
-    "DeliveryStatus": "Delivery",
-    "Circle": "Rajasthan",
-    "District": "Jaipur",
-    "Division": "Jaipur City",
-    "Region": "Jaipur HQ",
-    "Block": "Jaipur",
-    "State": "Rajasthan",
-    "Country": "India",
-    "Pincode": "302022"
-  }
+  ...
 ]
 ```
 
@@ -100,10 +71,9 @@ const { getPincodeInfo } = require('pincode-address');
 
 ## 🧪 Input Validation
 
-The input must be a **6-digit** Indian PIN code, otherwise an error is thrown.
-
 ```js
-await getPincodeInfo("123"); // ❌ Error: Invalid PIN code. It must be 6 digits.
+await getPincodeInfo("123"); 
+// ❌ Error: Invalid PIN code. It must be 6 digits.
 ```
 
 ---
@@ -112,31 +82,45 @@ await getPincodeInfo("123"); // ❌ Error: Invalid PIN code. It must be 6 digits
 
 ### `getPincodeInfo(pincode: string): Promise<PostOffice[] | null>`
 
-- **pincode** - a valid 6-digit string
-- **returns** - an array of post office objects or `null` if not found
+| Parameter | Type     | Description                      |
+|-----------|----------|----------------------------------|
+| `pincode` | `string` | A valid 6-digit Indian PIN code  |
+
+Returns:  
+- `Array` of post office objects, or  
+- `null` if no results are found
 
 ---
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
-
+Licensed under the [MIT License](LICENSE)
 
 ---
 
 ## 👤 Author
 
 **Roshan Suthar**  
-GitHub: [Roshansuthar1105](https://github.com/Roshansuthar1105)
+📦 GitHub: [@Roshansuthar1105](https://github.com/Roshansuthar1105)
 
 ---
 
 ## 🛠️ Contributing
 
-Pull requests are welcome. For major changes, open an issue first to discuss what you would like to change.
+Contributions are welcome!  
+Feel free to fork the repo, create a branch, and submit a pull request.
+
+> For major changes, please [open an issue](https://github.com/Roshansuthar1105/pincode-address/issues) first to discuss your ideas.
 
 ---
 
-## 🐛 Issues
+## 🐛 Reporting Issues
 
-If you encounter any issues or bugs, please report them [here](https://github.com/Roshansuthar1105/pincode-address/issues).
+Found a bug or issue?  
+Please report it here → [GitHub Issues](https://github.com/Roshansuthar1105/pincode-address/issues)
+
+---
+
+## 💡 Like this package?
+
+Give it a ⭐ on [GitHub](https://github.com/Roshansuthar1105/pincode-address) and share it with your network!
